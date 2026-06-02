@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhisperNote</title>
+<style>
+  :root {
+    --canvas: #F6F1E6;
+    --surface: #FFFFFF;
+    --text: #121519;
+    --text-secondary: #5F6671;
+    --accent: #3A5A8A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0E1218;
+      --surface: #171C24;
+      --text: #F1F3F6;
+      --text-secondary: #A3ABB5;
+      --accent: #7AA0CE;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+  }
+  p, li { font-size: 17px; color: var(--text); }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  nav a {
+    padding: 10px 16px;
+    background: var(--surface);
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .hero { padding: 80px 0 24px; }
+  .tagline { font-size: 22px; color: var(--text-secondary); margin: 0 0 32px; }
+  footer { margin-top: 80px; font-size: 13px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>WhisperNote</h1>
+    <p class="tagline">A voice memo app that only records when you whisper. Quiet by design.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>What it is</h2>
+    <p>
+      Tap once. WhisperNote watches the microphone for the unique spectral signature of whispered
+      speech and starts recording when it hears one. Loud speech, fans, traffic, and clattering plates
+      are ignored. Great for late nights, libraries, and sleeping kids.
+    </p>
+    <h2>Listening on-device</h2>
+    <p>
+      Audio is analysed by Apple's AVAudioEngine. Transcription happens on-device via Apple's Speech
+      framework. There is no network traffic.
+    </p>
+    <h2>Private by design</h2>
+    <p>
+      No account, no cloud, no analytics, no third-party SDKs. Memos are stored on your device
+      using SwiftData. Deleting the app deletes everything.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ilia Filiaev. WhisperNote is a voice memo app — not a medical or assistive device.
+  </footer>
+</div>
+</body>
+</html>
