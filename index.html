@@ -66,7 +66,7 @@
 <div class="wrap">
   <section class="hero">
     <h1>WhisperNote</h1>
-    <p class="tagline">A voice memo app that only records when you whisper. Quiet by design.</p>
+    <p class="tagline">Whisper a note and it becomes text. A normal voice is ignored.</p>
     <nav>
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
@@ -77,23 +77,25 @@
     <h2>What it is</h2>
     <p>
       Tap once. WhisperNote watches the microphone for the unique spectral signature of whispered
-      speech and starts recording when it hears one. Loud speech, fans, traffic, and clattering plates
+      speech and starts transcribing when it hears one. Loud speech, fans, traffic, and clattering plates
       are ignored. Great for late nights, libraries, and sleeping kids.
     </p>
     <h2>Listening on-device</h2>
     <p>
-      Audio is analysed by Apple's AVAudioEngine. Transcription happens on-device via Apple's Speech
-       framework.
+      Audio is analysed by Apple's AVAudioEngine. Transcription happens on-device via Apple's Speech framework, and the audio itself is never saved: WhisperNote keeps the text.
     </p>
     <h2>Private by design</h2>
     <p>
-      No account, no cloud, no ads, no tracking. Memos are stored on your device
-      using SwiftData. Deleting the app deletes everything.
+      No account, no cloud, no ads, no tracking. Your notes are stored on your device, and deleting the app deletes them.</p>
+    <h2>Free and Pro</h2>
+    <p>
+      Whispering, transcription and your ten newest notes are free. WhisperNote Pro, a one-time
+      in-app purchase, unlocks your full note history.
     </p>
   </section>
 
   <footer>
-    © 2026 Ilia Filiaev. WhisperNote is a voice memo app — not a medical or assistive device.
+    © 2026 Ilia Filiaev. WhisperNote is a whisper-to-text notes app — not a medical or assistive device.
   </footer>
 </div>
 </body>
