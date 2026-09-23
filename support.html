@@ -1,117 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support — WhisperNote</title>
-<style>
-  :root {
-    --canvas: #F6F1E6;
-    --surface: #FFFFFF;
-    --text: #121519;
-    --text-secondary: #5F6671;
-    --accent: #3A5A8A;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --canvas: #0E1218;
-      --surface: #171C24;
-      --text: #F1F3F6;
-      --text-secondary: #A3ABB5;
-      --accent: #7AA0CE;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-    background: var(--canvas);
-    color: var(--text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
-  h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 24px; }
-  h2 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
-  p, li { font-size: 17px; }
-  a { color: var(--accent); }
-  .back { font-size: 15px; }
-  .card {
-    margin: 24px 0;
-    padding: 20px 24px;
-    background: var(--surface);
-    border-radius: 14px;
-  }
-  details {
-    background: var(--surface);
-    border-radius: 14px;
-    padding: 16px 20px;
-    margin: 12px 0;
-  }
-  details summary { font-weight: 600; cursor: pointer; list-style: none; }
-  details summary::-webkit-details-marker { display: none; }
-  details[open] summary { margin-bottom: 12px; }
-</style>
+<meta charset="utf-8">
+<title>WhisperNote Support</title>
+<link rel="canonical" href="https://iliafiliaev.com/whispernote/support/">
+<meta http-equiv="refresh" content="0; url=https://iliafiliaev.com/whispernote/support/">
+<script>location.replace("https://iliafiliaev.com/whispernote/support/" + location.hash);</script>
 </head>
 <body>
-<div class="wrap">
-  <p class="back"><a href="index.html">← WhisperNote</a></p>
-  <h1>Support</h1>
-
-  <div class="card">
-    The fastest way to reach us is email:
-    <a href="mailto:filyaevilya21@gmail.com">filyaevilya21@gmail.com</a><br>
-    We usually respond within two business days.
-  </div>
-
-  <h2>Common questions</h2>
-
-  <details>
-    <summary>It doesn't start when I whisper.</summary>
-    <p>
-      Try switching to "Permissive" in Settings → Sensitivity. WhisperNote needs a little bit of
-      breath-noise to fire — the quieter the room, the easier it picks up the whisper. Holding the
-      phone close to your mouth helps. If a fan is on, you may want to point the bottom mic away
-      from it.
-    </p>
-  </details>
-
-  <details>
-    <summary>It starts when I talk normally.</summary>
-    <p>
-      Switch to "Strict" in Settings → Sensitivity. The strict preset requires a higher proportion
-      of high-frequency turbulent noise (the whisper signature) before activating.
-    </p>
-  </details>
-
-  <details>
-    <summary>Where do my transcripts come from?</summary>
-    <p>
-      Apple's Speech framework, running locally on your iPhone with on-device recognition. They
-      never leave the device.
-    </p>
-  </details>
-
-  <details>
-    <summary>Why isn't there an iCloud sync?</summary>
-    <p>
-      By design. WhisperNote ships with zero network access. Adding iCloud would mean we'd have to
-      audit, document, and disclose data flow we'd rather not have.
-    </p>
-  </details>
-
-  <details>
-    <summary>Where is my history stored?</summary>
-    <p>
-      On your device, in SwiftData. Nothing is sent anywhere. Deleting the app removes everything.
-    </p>
-  </details>
-
-  <h2>Found a bug?</h2>
-  <p>
-    Drop us an email with: iOS version, what you whispered (or were trying to), and what happened
-    instead. Screenshots help.
-  </p>
-</div>
+<p>WhisperNote Support has moved to <a href="https://iliafiliaev.com/whispernote/support/">https://iliafiliaev.com/whispernote/support/</a>.</p>
 </body>
 </html>
